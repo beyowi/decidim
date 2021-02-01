@@ -13,10 +13,11 @@ module Decidim
       delegate :count, to: :questions, prefix: true
 
       def new
+        @form = form(Voter::EncryptedVoteForm).instance(election: election)
+
         if pending_vote?
           redirect_to(pending_vote_path) unless booth_mode
         else
-          @form = form(Voter::EncryptedVoteForm).instance(election: election)
           redirect_to(return_path, alert: t("votes.messages.not_allowed", scope: "decidim.elections")) unless booth_mode
         end
       end
