@@ -194,6 +194,8 @@ en:
             trustees: Election Trustees
           index:
             title: Manage elections steps on the Bulletin Board
+          created:
+            title: Created
           key_ceremony:
             title: Key ceremony
             trustees: Trustees
