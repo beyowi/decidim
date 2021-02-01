@@ -222,10 +222,7 @@ en:
             success: The ballot box was successfully closed in the Bulletin Board
             title: Vote period
           vote_stats:
-            accepted: Accepted
-            casted: Casted
             no_vote_statistics_yet: No vote statistics yet
-            rejected: Rejected
             title: Vote Statistics
             voters: Voters
             votes: Votes
