@@ -2,13 +2,13 @@
   <div class="columns mediumlarge-4">
     <div class="process-header__phase">
       <div class="process-header__progress">
-        <ol>
+        <ol  aria-hidden="true">
           <% past_step = true %>
           <% participatory_process.steps.each_with_index do |step, index| %>
             <% if past_step %>
-              <li class="phase-item--past"><span></span></li>
+              <li class="phase-item--past"  aria-hidden="true"><span></span></li>
             <% else %>
-              <li><span></span></li>
+              <li aria-hidden="true"><span></span></li>
             <% end %>
             <% past_step = false if step.active? %>
           <% end %>
