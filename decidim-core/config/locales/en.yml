@@ -841,7 +841,7 @@ en:
       no_members: This group doesn't have any members yet.
     menu:
       help: Help
-      home: Home
+      home: Logbook
     messaging:
       conversation_mailer:
         comanagers_new_conversation:

@@ -831,7 +831,7 @@ fr:
       no_members: Ce groupe d'utilisateurs n'a encore aucun membre.
     menu:
       help: Aide
-      home: Accueil
+      home: Journal de bord
     messaging:
       conversation_mailer:
         comanagers_new_conversation:
@@ -1387,7 +1387,7 @@ fr:
         currently_waiting_confirmation_for_email: 'En attente de confirmation pour: %{email}'
         leave_blank_if_you_don_t_want_to_change_it: laisser vide si vous ne voulez pas le changer
         title: Modifier %{resource}
-        unhappy: Pas satisfait ? 
+        unhappy: Pas satisfait ?
         update: Mettre à jour
         we_need_your_current_password_to_confirm_your_changes: nous avons besoin de votre mot de passe actuel pour confirmer vos modifications
       new:
