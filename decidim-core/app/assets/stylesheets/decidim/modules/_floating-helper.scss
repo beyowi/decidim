@@ -39,6 +39,7 @@
   color: var(--secondary);
   background-color: rgba(var(--secondary-rgb), .1);
   font-size: rem-calc(14);
+  line-height: 1.5;
   font-weight: $global-weight-bold;
   border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
@@ -106,6 +107,7 @@
   color: $white;
   flex-shrink: 0;
   cursor: pointer;
+  border-radius: 0;
 
   @include flex;
   @include flex-align($x: center, $y: middle);

@@ -44,4 +44,15 @@ $(function() {
       });
     }
   });
+
+  // Change focus accordingly when help buttons are clicked
+  $("#floating-helper-tip").on("click", () => {
+    $("#floating-helper-block").focus();
+    $(this).blur();
+  });
+
+  $(".floating-helper__content-close").on("click", () => {
+    $("#floating-helper-tip").focus();
+    $("#floating-helper-block").blur();
+  });
 });
