@@ -8,6 +8,7 @@
 
 .process-header__inner{
   position: relative;
+  z-index: 0;
 
   @include flex;
   @include flex-align($x: center);
