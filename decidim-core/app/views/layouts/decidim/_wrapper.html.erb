@@ -42,7 +42,9 @@ end
             <% end %>
             <div class="row column topbar">
               <div class="logo-wrapper">
-                <%= render partial: "layouts/decidim/logo", locals: { organization: current_organization } %>
+                <h1 class="logo-title">
+                  <%= render partial: "layouts/decidim/logo", locals: { organization: current_organization } %>
+                </h1>
               </div>
               <%= render partial: "layouts/decidim/topbar_search" %>
               <%= render partial: "layouts/decidim/language_chooser" %>

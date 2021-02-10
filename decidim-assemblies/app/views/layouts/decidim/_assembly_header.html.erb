@@ -1,3 +1,4 @@
+
 <div class="process-header">
   <div class="process-header__inner">
     <div class="row column process-header__main"
@@ -6,19 +7,19 @@
     <div class="process-header__container row collapse column">
       <div class="columns mediumlarge-8 process-header__info">
         <div>
-          <h1 class="text-highlight heading2">
+          <h2 class="text-highlight heading2">
             <%= translated_attribute(current_participatory_space.title) %>
-          </h1>
+          </h2>
         </div>
         <div>
-          <h2 class="text-highlight heading-small">
+          <h3 class="text-highlight heading-small">
             <% if current_participatory_space.hashtag.present? %>
               <span class="process-header__hashtag">
                 <%= link_to "##{current_participatory_space.hashtag}", "https://twitter.com/hashtag/#{current_participatory_space.hashtag}", target: "_blank" %>
               </span>
             <% end %>
             <%= translated_attribute(current_participatory_space.subtitle) %>
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
