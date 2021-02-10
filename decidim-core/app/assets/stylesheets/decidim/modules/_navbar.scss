@@ -1,9 +1,9 @@
 /* Variables */
 
-$navbar-bg: $dark-gray;
+$navbar-bg: $white;
 $navbar-bg-hover: rgba(white, .02);
 $navbar-bg-focus: $primary;
-$navbar-color: rgba(white, .5);
+$navbar-color: $blueish-gray;
 $navbar-color-hover: $white;
 $navbar-active-color: $white;
 $navbar-active-bg: $navbar-bg-hover;
@@ -27,6 +27,7 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 var(--primary);
 
 .title-bar{
   position: relative;
+  background: $white !important;
 
   @include breakpoint(smallmedium down){
     border-top: 2.125rem solid $dark-gray;
@@ -164,6 +165,10 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 var(--primary);
 }
 
 /* Top bar */
+.sticky-container{
+  z-index: 1;
+}
+
 .topbar{
   display: flex;
   align-items: center;
@@ -185,6 +190,10 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 var(--primary);
 
   a{
     display: inline-block;
+
+    span{
+      color: black !important;
+    }
   }
 
   img{
@@ -566,6 +575,9 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 var(--primary);
   display: block;
   padding: 1em 2em;
   color: $navbar-color;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 
   &:hover{
     background: $navbar-bg-hover;
@@ -593,4 +605,31 @@ $navbar-active-shadow-medium: inset 0 4px 0 0 var(--primary);
   @include breakpoint(medium){
     box-shadow: $navbar-active-shadow-medium;
   }
+}
+
+// Black links and icons for white top bar
+.topbar__dropmenu a,
+.topbar__admin__link a,
+.topbar__user a{
+  font-weight: normal;
+  color: $black !important;
+}
+
+.topbar__notifications .icon,
+.topbar__conversations .icon{
+  fill: $black;
+  opacity: .3;
+}
+
+.topbar__dropmenu > ul > li > a::after{
+  border-top-color: unset !important;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+  border-color: $black transparent transparent;
+}
+
+.topbar__search input,
+.topbar__search:not(:focus-within) button{
+  background: $search-gray;
 }
