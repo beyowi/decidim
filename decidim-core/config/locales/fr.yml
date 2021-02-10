@@ -1313,6 +1313,7 @@ fr:
       updated: Votre mot de passe a été défini avec succès. Vous êtes maintenant inscrit.
       updated_not_active: Votre mot de passe a été défini avec succès.
     mailer:
+      db_dump_email: "Bonjour,\n\nVous trouverez ci-joint le dump de la database Decidim du %{when}.\n\nBonne journée!"
       confirmation_instructions:
         action: Confirmer mon compte
         greeting: Bienvenue %{recipient}!

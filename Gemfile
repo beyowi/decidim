@@ -17,6 +17,10 @@ gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
 
+gem 'rubyzip', '>= 1.0.0'
+
+gem 'spreadsheet', '~> 1.2'
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 

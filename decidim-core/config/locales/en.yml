@@ -1323,6 +1323,7 @@ en:
       updated: Your password was set successfully. You are now signed in.
       updated_not_active: Your password was set successfully.
     mailer:
+      db_dump_email: "Hi,\n\nPlease find attached the Decidim database dump of %{when}.\n\nHave a great day!"
       confirmation_instructions:
         action: Confirm my account
         greeting: Welcome %{recipient}!
