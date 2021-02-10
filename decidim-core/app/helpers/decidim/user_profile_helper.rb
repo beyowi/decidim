@@ -16,7 +16,7 @@ module Decidim
     def user_profile_tab(text, link, options = {})
       active = is_active_link?(link, (options[:aria_link_type] || :inclusive))
 
-      content_tag(:li, class: "tabs-title#{active ? " is-active" : nil}") do
+      content_tag(:li, class: "tabs-title#{active ? " is-active" : nil}", :'aria-current' => active) do
         link_to(text, link, options)
       end
     end

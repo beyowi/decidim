@@ -1,16 +1,16 @@
 <div class="card__icondata">
-  <ul class="card-data">
-    <li class="card-data__item">
+  <ul class="card-data" role="presentation">
+    <li class="card-data__item" role="presentation">
       <%= icon "datetime", class: "icon--big", role: "img", aria_label: t("decidim.participatory_processes.show.dates") %>
     </li>
-    <li class="card-data__item">
+    <li class="card-data__item" role="presentation">
       <div class="card-data__item--centerblock">
         <strong><%= t("activemodel.attributes.participatory_process.start_date") %></strong>
         <br>
         <%= start_date ? l(start_date, format: :decidim_short) : t("decidim.participatory_processes.show.unspecified") %>
       </div>
     </li>
-    <li class="card-data__item">
+    <li class="card-data__item" role="presentation">
       <div class="card-data__item--centerblock">
         <strong><%= t("activemodel.attributes.participatory_process.end_date") %></strong>
         <br>

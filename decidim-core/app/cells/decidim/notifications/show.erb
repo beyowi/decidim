@@ -18,14 +18,14 @@
 
   <% notifications.select(&:resource).each do |notification| %>
     <div class="card card--widget">
-      <ul class="card-data">
-        <li class="card-data__item">
+      <ul class="card-data" role="presentation">
+        <li class="card-data__item" role="presentation">
           <div class="card__link text-center">
             <%= resource_icon notification.resource, class: "icon--large" %>
             <span class="text-medium mt-xs"><%= l notification.created_at, format: :day_of_week_long %></span>
           </div>
         </li>
-        <li class="card-data__item card-data__item--expand absolutes">
+        <li class="card-data__item card-data__item--expand absolutes" role="presentation">
           <div class="mr-s">
             <span class="text-small"><%= notification.event_class.constantize.model_name.human %></span>
             <br>

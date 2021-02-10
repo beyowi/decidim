@@ -75,7 +75,7 @@ de:
   decidim:
     accessibility:
       external_link: Externer Link
-      logo: "Offizielles Logo von %{organization}"
+      logo: "Offizielles Logo von %{organization}, zur Startseite zurückkehren"
       skip_button: Zu Hauptinhalten überspringen
     account:
       data_portability_export:

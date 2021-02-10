@@ -11,7 +11,7 @@
       <div class="row column process-nav__content <%= browser.mobile? ? "is-active" : "" %>" id="process-nav-content" data-toggler=".is-active">
         <ul>
           <% items.each_with_index do |item, index| %>
-            <li class="<%= "is-active" if item[:active] %> <%= "hide-for-medium" if index > max_items %>">
+            <li class="<%= "is-active" if item[:active] %> <%= "hide-for-medium" if index > max_items %>" aria-current="<%= item[:active] %>">
               <%= link_to item[:url], class: "process-nav__link #{item[:active] ? 'active' : nil}" do %>
                 <%= item[:name] %>
               <% end %>
@@ -35,7 +35,7 @@
             </div>
             <ul>
               <% extra_items.each do |item| %>
-                <li class="<%= "is-active" if item[:active] %>">
+                <li class="<%= "is-active" if item[:active] %>" aria-current="<%= item[:active] %>">
                   <%= link_to item[:url], class: "process-nav__link #{item[:active] ? 'active' : nil}" do %>
                     <%= item[:name] %>
                   <% end %>

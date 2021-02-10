@@ -27,7 +27,7 @@ module Decidim
     delegate :content_tag, :link_to, :active_link_to_class, :is_active_link?, :icon, to: :@view
 
     def render
-      content_tag :li, class: link_wrapper_classes do
+      content_tag :li, class: link_wrapper_classes, :'aria-current' => is_active_link?(url, active) do
         if icon_name
           link_to(url) { icon(icon_name) + label }
         else
