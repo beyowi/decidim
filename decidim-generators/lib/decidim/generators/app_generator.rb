@@ -103,7 +103,7 @@ module Decidim
                        elsif options[:branch]
                          "git: \"https://github.com/beyowi/decidim.git\", branch: \"#{options[:branch]}\""
                        else
-                         "\"#{Decidim::Generators.version}\""
+                        "git: \"https://github.com/beyowi/decidim.git\", branch: \"release/0.22-stable\""
                        end
 
         gsub_file "Gemfile", /gem "#{current_gem}".*/, "gem \"#{current_gem}\", #{gem_modifier}"
