@@ -99,9 +99,9 @@ module Decidim
         gem_modifier = if options[:path]
                          "path: \"#{options[:path]}\""
                        elsif options[:edge]
-                         "git: \"https://github.com/decidim/decidim.git\""
+                         "git: \"https://github.com/beyowi/decidim.git\""
                        elsif options[:branch]
-                         "git: \"https://github.com/decidim/decidim.git\", branch: \"#{options[:branch]}\""
+                         "git: \"https://github.com/beyowi/decidim.git\", branch: \"#{options[:branch]}\""
                        else
                          "\"#{Decidim::Generators.version}\""
                        end
