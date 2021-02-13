@@ -118,6 +118,11 @@ module Decidim
               gsub_file "Gemfile", /gem "decidim-#{component}".*/, "# gem \"decidim-#{component}\", #{gem_modifier}"
             end
           end
+
+          # Add questions and opinions modules
+          %w(questions opinions).each do |component|
+            gsub_file "Gemfile", /gem "decidim-#{component}".*/, "gem \"decidim-#{component}\", git: \"https://github.com/beyowi/decidim-#{component}.git\", branch: \"release/0.22-stable\""
+          end
         end
 
         run "bundle install"

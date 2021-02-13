@@ -28,6 +28,8 @@ namespace :decidim do
       decidim_surveys
       decidim_system
       decidim_verifications
+      decidim_opinions
+      decidim_questions
     ).join(",")
   end
 end
