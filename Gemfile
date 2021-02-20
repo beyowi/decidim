@@ -12,6 +12,8 @@ gem "decidim-initiatives", path: "."
 
 gem "bootsnap", "~> 1.4"
 
+gem 'omniauth-keycloak', git: "https://github.com/beyowi/omniauth-keycloak.git"
+
 gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
 

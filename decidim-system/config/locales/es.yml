@@ -80,6 +80,12 @@ es:
           twitter:
             api_key: Clave API
             api_secret: Secreto API
+          keycloakopenid:
+            display_name: Keycloak
+            client_id: ID del cliente
+            client_secret: Secreto del cliente
+            site_url: URL del sitio web
+            realm: Reino
         smtp_settings:
           instructions:
             from_label: 'La dirección de correo de envío será: "el-nombre-de-tu-organización<your-organization@your-provider.org>. Déjalo en blanco para usar el "des de" como etiqueta'
