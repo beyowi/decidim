@@ -9,6 +9,7 @@ gem "decidim-consultations", path: ".."
 gem "decidim-initiatives", path: ".."
 gem "decidim-questions", path: ".."
 gem "decidim-opinions", path: ".."
+gem "decidim-fictions", path: ".."
 
 gem "bootsnap", "~> 1.3"
 
