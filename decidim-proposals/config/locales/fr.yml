@@ -22,7 +22,7 @@ fr:
         has_address: Renseigner une adresse
         scope_id: Secteur
         state: État
-        suggested_hashtags: Hashtags suggérés
+        suggested_hashtags: Catégories suggérées
         title: Titre
         user_group_id: Créer une proposition en tant que
       proposal_answer:
@@ -166,7 +166,7 @@ fr:
             endorsements_enabled: Activer le module de soutiens
             proposal_answering_enabled: Autoriser la réponse officielle aux propositions
             publish_answers_immediately: Publier immédiatement les réponses à la proposition
-            suggested_hashtags: Hashtags suggérés aux utilisateurs pour de nouvelles propositions
+            suggested_hashtags: Catégories suggérées aux utilisateurs pour de nouvelles propositions
             votes_blocked: Bloquer les votes
             votes_enabled: Activer le module de vote simple
             votes_hidden: Cacher les votes (si le module de votes est activé, le décompte des votes sera caché)
